@@ -1,0 +1,14 @@
+{
+  "name": "JUCE Build Environment",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/cmake:1": {},
+    "ghcr.io/devcontainers/features/ninja:1": {}
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libasound2-dev libjack-jackd2-dev libcurl4-openssl-dev libfreetype6-dev libx11-dev libxcomposite-dev libxcursor-dev libxext-dev libxinerama-dev libxrandr-dev libxrender-dev libwebkit2gtk-4.0-dev libglu1-mesa-dev mesa-common-dev",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cmake-tools", "ms-vscode.cpptools"]
+    }
+  }
+}
